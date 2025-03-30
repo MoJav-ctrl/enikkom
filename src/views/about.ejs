@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="min-h-screen flex flex-col">
+  <%- include('partials/navbar') %>
+
+  <!-- About Hero -->
+  <section class="bg-enikkom-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold mb-6 text-enikkom-header">About Enikkom</h1>
+      <p class="text-xl mb-8">Our journey in industrial construction</p>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-enikkom-bg">Our Timeline</h2>
+      
+      <div class="relative">
+        <!-- Timeline line -->
+        <div class="absolute left-1/2 w-1 h-full bg-enikkom-header transform -translate-x-1/2"></div>
+        
+        <!-- Timeline items -->
+        <div class="mb-8 flex justify-between items-center w-full">
+          <div class="w-5/12 px-4 py-6 bg-gray-50 rounded-lg shadow">
+            <h3 class="text-xl font-bold text-enikkom-header">2005</h3>
+            <p>Founded with a small team specializing in pipeline construction</p>
+          </div>
+          <div class="w-5/12"></div>
+        </div>
+
+        <div class="mb-8 flex justify-between items-center w-full flex-row-reverse">
+          <div class="w-5/12 px-4 py-6 bg-gray-50 rounded-lg shadow">
+            <h3 class="text-xl font-bold text-enikkom-header">2010</h3>
+            <p>Expanded services to include HDD and dredging operations</p>
+          </div>
+          <div class="w-5/12"></div>
+        </div>
+
+        <div class="mb-8 flex justify-between items-center w-full">
+          <div class="w-5/12 px-4 py-6 bg-gray-50 rounded-lg shadow">
+            <h3 class="text-xl font-bold text-enikkom-header">2015</h3>
+            <p>Completed our 100th major industrial project</p>
+          </div>
+          <div class="w-5/12"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-enikkom-bg">Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-enikkom-bg">John Smith</h3>
+            <p class="text-gray-700 mb-4">CEO & Founder</p>
+            <p class="text-gray-600 mb-4">20+ years in industrial construction</p>
+            <a href="/enquiry" class="bg-enikkom-btn text-white px-4 py-2 rounded inline-block hover:bg-red-700 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-enikkom-bg">Sarah Johnson</h3>
+            <p class="text-gray-700 mb-4">Operations Director</p>
+            <p class="text-gray-600 mb-4">Specializes in HDD projects</p>
+            <a href="/enquiry" class="bg-enikkom-btn text-white px-4 py-2 rounded inline-block hover:bg-red-700 transition">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-enikkom-bg">Michael Chen</h3>
+            <p class="text-gray-700 mb-4">Lead Engineer</p>
+            <p class="text-gray-600 mb-4">Pipeline construction expert</p>
+            <a href="/enquiry" class="bg-enikkom-btn text-white px-4 py-2 rounded inline-block hover:bg-red-700 transition">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

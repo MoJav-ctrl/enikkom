@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="min-h-screen flex flex-col">
+  <%- include('partials/navbar') %>
+
+  <!-- Hero Section -->
+  <section class="bg-enikkom-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold mb-6 text-enikkom-header">Building the Future</h1>
+      <p class="text-xl mb-8">Industrial construction solutions for modern challenges</p>
+      <a href="/enquiry" class="bg-enikkom-btn text-white px-8 py-3 rounded-lg font-semibold inline-block hover:bg-red-700 transition">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-enikkom-bg">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-enikkom-bg">HDD Services</h3>
+            <p class="text-gray-700">Horizontal Directional Drilling for efficient underground installations.</p>
+            <a href="/services" class="mt-4 bg-enikkom-btn text-white px-4 py-2 rounded inline-block hover:bg-red-700 transition">Learn More</a>
+          </div>
+        </div>
+        
+        <!-- Service Card 2 -->
+        <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-enikkom-bg">Pipeline Construction</h3>
+            <p class="text-gray-700">Comprehensive pipeline solutions for industrial applications.</p>
+            <a href="/services" class="mt-4 bg-enikkom-btn text-white px-4 py-2 rounded inline-block hover:bg-red-700 transition">Learn More</a>
+          </div>
+        </div>
+        
+        <!-- Service Card 3 -->
+        <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-enikkom-bg">Dredging</h3>
+            <p class="text-gray-700">Expert dredging services for waterways and marine construction.</p>
+            <a href="/services" class="mt-4 bg-enikkom-btn text-white px-4 py-2 rounded inline-block hover:bg-red-700 transition">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
