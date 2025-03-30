@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="min-h-screen flex flex-col">
+  <%- include('partials/navbar') %>
+
+  <!-- Projects Hero -->
+  <section class="bg-enikkom-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold mb-6 text-enikkom-header">Our Projects</h1>
+      <p class="text-xl mb-8">Showcase of our industrial construction work</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="projects-grid">
+        <!-- Projects will be loaded here via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div class="fixed inset-0 bg-enikkom-bg/90 z-50 hidden" id="project-modal">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl">
+      <div class="bg-white rounded-lg overflow-hidden shadow-xl">
+        <!-- Modal Header -->
+        <div class="bg-enikkom-header text-white px-6 py-4 flex justify-between items-center">
+          <h3 class="text-xl font-bold" id="modal-title">Project Title</h3>
+          <button id="close-modal" class="text-white hover:text-gray-200">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Modal Content -->
+        <div class="p-6">
+          <div class="relative h-96 bg-gray-200 mb-6 rounded overflow-hidden">
+            <img id="modal-image" src="" alt="Project" class="w-full h-full object-cover">
+            <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-enikkom-btn text-white p-2 rounded-full hover:bg-red-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+            <button id="next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-enikkom-btn text-white p-2 rounded-full hover:bg-red-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" id="thumbnails">
+            <!-- Thumbnails will be loaded here -->
+          </div>
+          <p class="text-gray-700" id="modal-description">Project description goes here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+
+  <script src="/js/modal.js"></script>
+</body>
+</html>

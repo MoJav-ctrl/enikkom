@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="min-h-screen flex flex-col">
+  <%- include('partials/navbar') %>
+
+  <!-- Services Hero -->
+  <section class="bg-enikkom-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold mb-6 text-enikkom-header">Our Services</h1>
+      <p class="text-xl mb-8">Comprehensive industrial construction solutions</p>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col">
+        <!-- Tab Buttons -->
+        <div class="flex border-b border-gray-200">
+          <button class="tab-btn py-4 px-6 font-medium text-enikkom-bg border-b-2 border-enikkom-btn" data-tab="hdd">
+            HDD Services
+          </button>
+          <button class="tab-btn py-4 px-6 font-medium text-gray-500" data-tab="pipelines">
+            Pipeline Construction
+          </button>
+          <button class="tab-btn py-4 px-6 font-medium text-gray-500" data-tab="dredging">
+            Dredging
+          </button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="py-8">
+          <!-- HDD Content -->
+          <div class="tab-content active" id="hdd">
+            <h2 class="text-2xl font-bold mb-4 text-enikkom-bg">Horizontal Directional Drilling</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <p class="text-gray-700 mb-4">Our HDD services provide trenchless solutions for installing underground pipelines, conduits, and cables with minimal environmental impact.</p>
+                <ul class="list-disc pl-5 text-gray-700 mb-6">
+                  <li class="mb-2">Precision drilling up to 48" diameter</li>
+                  <li class="mb-2">Maximizes surface preservation</li>
+                  <li class="mb-2">Reduced restoration costs</li>
+                </ul>
+                <a href="/enquiry" class="bg-enikkom-btn text-white px-6 py-2 rounded-lg font-semibold inline-block hover:bg-red-700 transition">Request Service</a>
+              </div>
+              <div class="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
+                <span class="text-gray-400">HDD Image Placeholder</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pipelines Content -->
+          <div class="tab-content hidden" id="pipelines">
+            <h2 class="text-2xl font-bold mb-4 text-enikkom-bg">Pipeline Construction</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <p class="text-gray-700 mb-4">Comprehensive pipeline construction services for industrial, commercial, and municipal applications.</p>
+                <ul class="list-disc pl-5 text-gray-700 mb-6">
+                  <li class="mb-2">Steel, PVC, and HDPE pipelines</li>
+                  <li class="mb-2">Installation and maintenance</li>
+                  <li class="mb-2">Pressure testing and inspection</li>
+                </ul>
+                <a href="/enquiry" class="bg-enikkom-btn text-white px-6 py-2 rounded-lg font-semibold inline-block hover:bg-red-700 transition">Request Service</a>
+              </div>
+              <div class="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
+                <span class="text-gray-400">Pipeline Image Placeholder</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dredging Content -->
+          <div class="tab-content hidden" id="dredging">
+            <h2 class="text-2xl font-bold mb-4 text-enikkom-bg">Dredging Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <p class="text-gray-700 mb-4">Professional dredging services for waterways, ports, and environmental remediation projects.</p>
+                <ul class="list-disc pl-5 text-gray-700 mb-6">
+                  <li class="mb-2">Maintenance dredging</li>
+                  <li class="mb-2">Capital dredging</li>
+                  <li class="mb-2">Environmental dredging</li>
+                </ul>
+                <a href="/enquiry" class="bg-enikkom-btn text-white px-6 py-2 rounded-lg font-semibold inline-block hover:bg-red-700 transition">Request Service</a>
+              </div>
+              <div class="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
+                <span class="text-gray-400">Dredging Image Placeholder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
